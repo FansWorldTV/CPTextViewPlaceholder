@@ -120,6 +120,13 @@
 }
 
 #pragma mark - Getters and Setters
+-(NSString*)text
+{
+    if ([self isUsingPlaceholder])
+        return [NSString string];
+    else
+        return [super text];
+}
 
 - (void)setAutocorrectionType:(UITextAutocorrectionType)autocorrectionType
 {
