@@ -82,7 +82,7 @@
         return;
     }
     
-    if (self.text.length == 0) {
+    if ([super text].length == 0) {
         [self setupPlaceholder];
         return;
     }
